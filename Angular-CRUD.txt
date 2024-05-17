@@ -1,0 +1,29 @@
+STEP-1 : CREATE ANGULAR-CRUD APPLICATION 
+
+STEP-2 : INSTALL BOOTSTRAP 
+    -> npm i bootstrap 
+    -> npm i bootstrap-icons 
+
+STEP-3 : CREATE COMPONENTS 
+    -> NG G C COMPONENTS/NAVBAR --SKIT-TESTS
+    -> NG G C COMPONENTS/FOOTER --SKIT-TESTS
+    -> NG G C COMPONENTS/PNF --SKIT-TESTS
+    -> NG G C COMPONENTS/CREATE --SKIT-TESTS
+    -> NG G C COMPONENTS/INDEX --SKIT-TESTS
+    -> NG G C COMPONENTS/UPDATE --SKIT-TESTS 
+    -> NG G C COMPONENTS/VIEW --SKIT-TESTS 
+
+STEP-4 : CREATE ROUTES
+
+STEP-5 : CREATE SERVER
+    -> npm i -g json-server 
+
+STEP-6 : CREATE SERVICE 
+    -> NG G SERVICE SERVICE/USER 
+
+STEP-7 : UPDATE APP.CONFIG.TS 
+	import { provideHttpClient } from '@angular/common/http';
+
+	export const appConfig: ApplicationConfig = {
+		providers: [provideRouter(routes), provideHttpClient()] // Updated
+	};
